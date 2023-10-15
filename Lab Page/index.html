@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- pdf maker package -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/vfs_fonts.js"></script>
+    
+    <!-- src -->
+    <title>L A B O R A T O I R E</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <section class="but">
+        <div class="header">
+            <input type="checkbox" checked id="checkbox1">
+            <label for="checkbox1">But</label>
+        </div>
+
+        <div class="body">
+            <input type="text">
+        </div>
+    </section>
+
+    <section class="hypothesis">
+        <div class="header">
+            <input type="checkbox" checked id="checkbox2">
+            <label for="checkbox2">Hypothèse</label>
+        </div>
+
+        <div class="body">
+            <input type="text">
+        </div>
+    </section>
+
+    <section class="material">
+        <div class="header">
+            <input type="checkbox" checked id="checkbox3">
+            <label for="checkbox3">Matériel</label>
+        </div>
+
+        <div class="body">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Objet</th>
+                    <th>Marge Erreur</th>
+                </tr>
+    
+                <tr>
+                    <td><input type="number" min="1"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+
+            <button>+</button>
+        </div>
+    </section>
+
+    <section class="manipulation">
+        <div class="header">
+            <input type="checkbox" checked id="checkbox4">
+            <label for="checkbox4">Manipulation</label>
+        </div>
+
+        <div class="body">
+            <table>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+            
+            <button>+</button>
+        </div>
+    </section>
+
+    <section class="observation">
+        <div class="header">
+            <input type="checkbox" checked id="checkbox5">
+            <label for="checkbox5">Observation</label>
+        </div>
+
+        <div class="body">
+            <button id="add-row">+ row</button>
+            <button id="add-col">+ column</button>
+            <table><tr></tr></table>
+        </div>
+    </section>
+    
+
+    <button id="printPDF">Imprimer le PDF</button>
+
+    <script src="./sections/section.js"></script>
+
+    <script src="./sections/but.js"></script>
+    <script src="./sections/hypothesis.js"></script>
+    <script src="./sections/material.js"></script>
+    <script src="./sections/manipulation.js"></script>
+    <script src="./sections/observation.js"></script>
+
+    <script src="./script.js"></script>
+</body> 
+</html>

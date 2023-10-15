@@ -1,0 +1,54 @@
+section {
+    margin-top: 20px;
+    width: 100%;
+}
+
+section .body {
+    margin-top: 10px;
+    width: 100%;
+}
+
+section .body input {
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    font-family: Courier;
+    width: calc(100% - 10px);
+}
+
+section .body table {
+    width: 100%;
+}
+
+section .body table th {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section .body button {
+    width: 100%;
+    height: 30px;
+}
+
+section .header label {
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+
+#printPDF {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(48,48,48,1) 100%);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 30px;
+}
